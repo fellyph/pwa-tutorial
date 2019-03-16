@@ -1,0 +1,41 @@
+.header {
+  padding-top: 1em;
+
+  &__hello {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  &__iam {
+    font-size: 2.2em;
+    font-weight: normal;
+    margin-top: 0;
+  }
+
+  &__profile {
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  &__picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 2em;
+  }
+
+  @media screen and (max-width: $break-medium) {
+    &__profile {
+      display: block;
+      text-align: center;
+    }
+
+    &__picture {
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+  }
+}

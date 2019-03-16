@@ -1,0 +1,21 @@
+body {
+  background-color: $primary;
+  color: $secondary;
+  font-family: 'Arvo', serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: $secondary;
+  color: $primary;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+}
+
+.main {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
