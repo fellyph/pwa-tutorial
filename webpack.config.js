@@ -2,7 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production'
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
@@ -12,7 +13,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     publicPath: '/',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -22,11 +23,12 @@ module.exports = {
         use: [{
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
+            presets: ['@babel/preset-env'],
+          },
         },
         'eslint-loader',
-      ] },
+        ],
+      },
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /(node_modules|bower_components)/,
@@ -44,10 +46,10 @@ module.exports = {
           fallback: 'file-loader',
           publicPath: './img',
           outputPath: './img',
-          name: '[name].[ext]'
+          name: '[name].[ext]',
         },
       },
-    ]
+    ],
   },
   devServer: {
     publicPath: '/',
@@ -57,7 +59,7 @@ module.exports = {
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'Fellyph Cintra Front-end Engineer',
+      title: 'Lorem Ipsum Front-end Engineer',
       template: './src/index.html',
       favicon: false,
     }),

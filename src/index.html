@@ -4,7 +4,7 @@
 	  <meta charset="UTF-8" />
 	  <title><%= htmlWebpackPlugin.options.title %></title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta name="theme-color" content="#000">
+	  <meta name="theme-color" content="#000"/>
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <link rel="icon" href="<%= require('./assests/icons/fav.jpg') %>" sizes="32x32" />
     <link rel="icon" href="<%= require('./assests/icons/fav-192.jpg') %>" sizes="192x192" />
@@ -51,7 +51,7 @@
 				<img class="header__picture" src="<%=require('./assests/imgs/profile.svg')%>" />
         <figcaption>
           <h1 class="header__hello">Hello.</h1>
-          <h2 class="header__iam">Lorem ipsum dolor sit amet.</h2>
+          <h2 class="header__iam"><%= htmlWebpackPlugin.options.title %></h2>
         </figcaption>
       </figure>
 		</header>
