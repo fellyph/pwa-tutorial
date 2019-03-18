@@ -26,14 +26,21 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
-        'eslint-loader',
+        {
+          loader: 'eslint-loader',
+          options: {
+            rules: {
+              'no-console': devMode ? 'off' : 'warn',
+            },
+          },
+        },
         ],
       },
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /(node_modules|bower_components)/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
