@@ -15,7 +15,7 @@
   ],
   "start_url": "/?utm=pwa",
   "background_color": "#000000",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "theme_color": "#000000"
 }
