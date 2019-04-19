@@ -45,6 +45,17 @@ a {
       margin-right: 0;
       margin-bottom: 2em; } }
 
+.pwa__alert {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 0.5em;
+  display: none; }
+
+@media (display-mode: fullscreen) {
+  .header__hello {
+    color: pink; } }
+
 .social {
   text-align: right;
   margin-bottom: 2em; }
