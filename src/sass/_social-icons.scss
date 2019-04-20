@@ -6,11 +6,24 @@
     display: inline-block;
     margin-left: 0.5em;
     cursor: pointer;
+    vertical-align: middle;
   }
 
   &__icon {
     width: 25px;
     height: 25px;
+  }
+
+  &__shareIcon {
+    width: 40px;
+    height: 47px;
+  }
+
+  &__shareButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: none;
   }
 
   &__links {
