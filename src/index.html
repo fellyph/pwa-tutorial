@@ -20,11 +20,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
  	</head>
 	<body>
+    <nav class="pwaMenu">
+      <img class="pwaMenu__logo" src="<%= require('./assests/icons/pwa_icon.svg') %>" />
+      <button class="pwaMenu__installBtn">
+        Instalar PWA
+      </button>
+      <button class="pwaMenu__shareButton">
+        <img class="pwaMenu__shareIcon" src="<%= require('./assests/icons/share_icon.svg') %>" />
+      </button>
+    </nav>
 	  <section class="main">
-				<div class="pwa__alert">
-					<button class="pwa__alert__btn">Adicionar a tela principal</button>
-				</div>
-			
 			<header class="header">
 				<nav class="social" itemscope itemtype="http://schema.org/Person">
 					<meta itemprop="name" content="Fellyph Cintra" />
@@ -59,11 +64,6 @@
 								<img class="social__icon" src="<%= require('./assests/icons/twitter.svg') %>" />
 							</a>
 						</li>
-						<li class="social__item">
-							<button class="social__shareButton">
-								<img class="social__shareIcon" src="<%= require('./assests/icons/share_icon.svg') %>" />
-							</button>
-						</li>
 					</ul>
 				</nav>
 				<figure class="header__profile">
@@ -74,12 +74,12 @@
 					</figcaption>
 				</figure>
 			</header>
-			<article class="about">
+			<article class="about block">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a tortor ut mauris egestas mattis et sed tortor. Sed et imperdiet tortor. Etiam velit libero, fermentum nec urna ac, suscipit cursus justo.</p>
 				<p>Pellentesque a tortor ut mauris egestas mattis et sed tortor. Sed et imperdiet tortor. </p>
 				<p>Donec non lacus non dolor maximus consectetur at a arcu. Ut malesuada eros id justo consequat egestas. Donec eu consectetur nisl, at scelerisque leo. Duis pretium mollis tortor, nec luctus lacus tincidunt quis. Aenean mi metus, egestas a gravida in, mollis ut nulla.</p>
 			</article>
-			<article class="portfolio">
+			<article class="portfolio block">
 				<header>
 					<h3>Main Skills</h3>
 					<ul class="skills">

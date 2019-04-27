@@ -1,0 +1,51 @@
+.pwaMenu {
+  padding: 0.3em 1em;
+  height: 50px;
+  background: $gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: none;
+    width: 50px;
+    height: auto;
+    top: 0;
+  }
+
+  &__shareIcon {
+    width: 40px;
+    height: 47px;
+  }
+
+  &__shareButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: none;
+  }
+
+  &__installBtn {
+    background: $gray;
+    border: 1px solid $secondary;
+    color: $secondary;
+    padding: 0.5em 1em;
+  }
+
+  // desktop and mobile
+  @media (display-mode: standalone) {
+    &__logo {
+      display: block;
+    }
+  }
+
+  @media (max-width: 576px) and (display-mode: standalone) {
+    @supports (-webkit-overflow-scrolling: touch) {
+      /* PWAs instaladas apenas no iOS */
+    }
+
+    @supports not (-webkit-overflow-scrolling: touch) {
+      /* PWAs instaladas em dispositivos não iOS */
+    }
+  }
+}

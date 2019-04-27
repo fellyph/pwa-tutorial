@@ -1,6 +1,6 @@
 .social {
   text-align: right;
-  margin-bottom: 2em;
+  margin: 2em 0;
 
   &__item {
     display: inline-block;
@@ -12,18 +12,6 @@
   &__icon {
     width: 25px;
     height: 25px;
-  }
-
-  &__shareIcon {
-    width: 40px;
-    height: 47px;
-  }
-
-  &__shareButton {
-    background: transparent;
-    border: none;
-    padding: 0;
-    display: none;
   }
 
   &__links {
@@ -38,7 +26,7 @@
       height: 30px;
       border-radius: 50%;
       background-color: $ternary;
-      color: #333;
+      color: $gray;
       text-align: center;
       padding: 0.4em;
       background-image: radial-gradient(circle at center, $secondary 50%, $ternary 50%);
