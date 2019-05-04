@@ -6,7 +6,8 @@
   justify-content: space-between;
   align-items: center;
 
-  &__logo {
+  &__logo,
+  &__appleLogo {
     display: none;
     width: 50px;
     height: auto;
@@ -32,20 +33,24 @@
     padding: 0.5em 1em;
   }
 
-  // desktop and mobile
+  /*
+    media para desktop e mobile
+  */
   @media (display-mode: standalone) {
     &__logo {
-      display: block;
+      display: inline-block;
     }
   }
 
   @media (max-width: 576px) and (display-mode: standalone) {
     @supports (-webkit-overflow-scrolling: touch) {
-      /* PWAs instaladas apenas no iOS */
+      &__appleLogo {
+        display: inline-block;
+      }
     }
 
     @supports not (-webkit-overflow-scrolling: touch) {
-      /* PWAs instaladas em dispositivos não iOS */
+      // para não iOS
     }
   }
 }
