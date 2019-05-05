@@ -15,7 +15,7 @@
   ],
   "start_url": "/",
   "background_color": "#000000",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#000000"
 }

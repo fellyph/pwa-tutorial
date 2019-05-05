@@ -12,6 +12,4 @@ if (navigator.share) {
       });
     });
   }
-} else {
-  //
 }

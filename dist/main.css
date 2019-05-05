@@ -15,35 +15,40 @@ a {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0.5em; }
+  padding: 0; }
 
-.header {
-  padding-top: 1em; }
-  .header__hello {
-    font-size: 4em;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0.5em; }
-  .header__iam {
-    font-size: 2.2em;
-    font-weight: normal;
-    margin-top: 0; }
+.block {
+  padding: 0.7em; }
+
+.header__hello {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+
+.header__iam {
+  font-size: 2.2em;
+  font-weight: normal;
+  margin-top: 0; }
+
+.header__profile {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 2em; }
+
+.header__picture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  margin-right: 2em; }
+
+@media screen and (max-width: 768px) {
   .header__profile {
-    overflow: hidden;
-    display: flex;
-    margin-bottom: 2em; }
+    display: block;
+    text-align: center; }
   .header__picture {
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-    margin-right: 2em; }
-  @media screen and (max-width: 768px) {
-    .header__profile {
-      display: block;
-      text-align: center; }
-    .header__picture {
-      margin-right: 0;
-      margin-bottom: 2em; } }
+    margin-right: 0;
+    margin-bottom: 2em; } }
 
 .pwa__alert {
   background: white;
@@ -58,11 +63,12 @@ a {
 
 .social {
   text-align: right;
-  margin-bottom: 2em; }
+  margin: 2em 0; }
   .social__item {
     display: inline-block;
     margin-left: 0.5em;
-    cursor: pointer; }
+    cursor: pointer;
+    vertical-align: middle; }
   .social__icon {
     width: 25px;
     height: 25px; }
@@ -99,8 +105,8 @@ a {
   margin: 0 0 1em 0; }
 
 .skills {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   .skills__item {
     background: white;
     color: black;
@@ -115,4 +121,40 @@ a {
   width: 100%; }
   .jobs__thumb {
     margin: 0; }
+
+.pwaMenu {
+  padding: 0.3em 1em;
+  height: 50px;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*
+    media para desktop e mobile
+  */ }
+  .pwaMenu__logo, .pwaMenu__appleLogo {
+    display: none;
+    width: 50px;
+    height: auto;
+    top: 0; }
+  .pwaMenu__shareIcon {
+    width: 40px;
+    height: 47px; }
+  .pwaMenu__shareButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: none; }
+  .pwaMenu__installBtn {
+    background: #333;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5em 1em; }
+  @media (display-mode: standalone) {
+    .pwaMenu__logo {
+      display: inline-block; } }
+  @media (max-width: 576px) and (display-mode: standalone) {
+    @supports (-webkit-overflow-scrolling: touch) {
+      .pwaMenu__logo, .pwaMenu__appleLogo {
+        display: inline-block; } } }
 
