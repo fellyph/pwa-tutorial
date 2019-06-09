@@ -1,25 +1,14 @@
-const addBadge = document.querySelector('.badingAPI__add');
-const cleanBadge = document.querySelector('.badingAPI__clean');
-const counterBadge = 0;
-let bagdeTimer;
+const addBadge = document.querySelector('.badgingAPI__add');
+const cleanBadge = document.querySelector('.badginAPI_clean');
 
-if(addBadge) {
+if (addBadge) {
   addBadge.addEventListener('click', () => {
-    if(counterBadge === 0) {
-      bagdeTimer = window.setInterval(() => {
-        counterBadge += 1;
-        window.ExperimentalBadge.set(counterBadge);
-      }, 1000);
-    }
+    window.ExperimentalBadge.set();
   });
-
-  if(cleanBadge) {
-    cleanBadge.addEventListener('click', () => {
-      counterBadge = 0;
-      window.ExperimentalBadge.clear();
-      clearInterval(bagdeTimer);
-    });
-  }
 }
 
-
+if (cleanBadge) {
+  cleanBadge.addEventListener('click', () => {
+    window.ExperimentalBadge.clear();
+  });
+}
