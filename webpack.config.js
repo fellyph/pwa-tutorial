@@ -8,7 +8,6 @@ const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
   entry: {
     main: './src/index.js',
-    sw: './src/js/sw.js',
   },
   output: {
     filename: '[name].js',

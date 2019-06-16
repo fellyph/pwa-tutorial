@@ -100,6 +100,19 @@
 					</ul>
 				</header>
       </article>
-	  </section>
+    </section>
+    <script>
+        // verifica se suporta service worker
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+             .then((reg) => {
+                console.log('Registrado nosso primeiro service worker', reg);
+              }).catch((err) => {
+                console.log('Algo de errado aconteceu', err);
+              });;
+          });
+        }
+      </script>
 	</body>
   </html>

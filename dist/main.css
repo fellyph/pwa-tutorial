@@ -126,13 +126,10 @@ a {
   padding: 0.3em 1em;
   height: 50px;
   background: #333;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  /*
-    media para desktop e mobile
-  */ }
-  .pwaMenu__logo, .pwaMenu__appleLogo {
+  display: none; }
+  .pwaMenu__logo {
     display: none;
     width: 50px;
     height: auto;
@@ -149,12 +146,9 @@ a {
     background: #333;
     border: 1px solid white;
     color: white;
-    padding: 0.5em 1em; }
+    padding: 0.5em 1em;
+    display: none; }
   @media (display-mode: standalone) {
     .pwaMenu__logo {
       display: inline-block; } }
-  @media (max-width: 576px) and (display-mode: standalone) {
-    @supports (-webkit-overflow-scrolling: touch) {
-      .pwaMenu__logo, .pwaMenu__appleLogo {
-        display: inline-block; } } }
 
