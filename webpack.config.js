@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const workboxPlugin = require('workbox-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -78,7 +79,6 @@ module.exports = {
       swDest: 'sw.js',
       clientsClaim: true,
       skipWaiting: true,
-      globPatterns: ['./manifest.json'],
       runtimeCaching: [{
         urlPattern: new RegExp('^https:\/\/fonts\.googleapis\.com/'),
         handler: 'StaleWhileRevalidate',
@@ -89,6 +89,38 @@ module.exports = {
           },
         },
       }],
+    }),
+    new WebpackPwaManifest({
+      short_name: 'Lorem Ipsum',
+      name: 'Lorem Ipsum Front-end Engineer',
+      description: 'Progressive Web App Course fellyph cintra!',
+      start_url: '/',
+      background_color: '#000000',
+      display: 'standalone',
+      orientation: 'portrait',
+      theme_color: '#000000',
+      icons: [
+        {
+          src: path.resolve('src/assets/icons/icon-152-152.png'),
+          type: 'image/png',
+          sizes: '152x152',
+        },
+        {
+          src: path.resolve('src/assets/icons/icon-180-180.png'),
+          type: 'image/png',
+          sizes: '180x180',
+        },
+        {
+          src: path.resolve('src/assets/icons/icon-192-192.png'),
+          type: 'image/png',
+          sizes: '192x192',
+        },
+        {
+          src: path.resolve('src/assets/icons/icon-512-512.png'),
+          type: 'image/png',
+          sizes: '512x512',
+        },
+      ],
     }),
   ],
 };

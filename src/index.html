@@ -6,14 +6,13 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#000"/>
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
-    <link rel="icon" href="<%= require('./assests/icons/fav.jpg') %>" sizes="32x32" />
-    <link rel="icon" href="<%= require('./assests/icons/fav-192.jpg') %>" sizes="192x192" />
-		<link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="<%= require('./assets/icons/fav.jpg') %>" sizes="32x32" />
+    <link rel="icon" href="<%= require('./assets/icons/fav-192.jpg') %>" sizes="192x192" />
 		<!-- ios Icons -->
-		<link rel="apple-touch-icon" href="<%= require('./assests/icons/icon-180-180.png') %>">
-		<link rel="apple-touch-icon" sizes="152x152" href="<%= require('./assests/icons/icon-152-152.png') %>">
-		<link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assests/icons/icon-180-180.png') %>">
-		<link rel="apple-touch-icon" sizes="167x167" href="<%= require('./assests/icons/icon-167-167.png') %>">
+		<link rel="apple-touch-icon" href="<%= require('./assets/icons/icon-180-180.png') %>">
+		<link rel="apple-touch-icon" sizes="152x152" href="<%= require('./assets/icons/icon-152-152.png') %>">
+		<link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assets/icons/icon-180-180.png') %>">
+		<link rel="apple-touch-icon" sizes="167x167" href="<%= require('./assets/icons/icon-167-167.png') %>">
 		<!-- app title -->
 		<meta name="apple-mobile-web-app-title" content="Lorem Ipsum">
 		<!-- enable standalone mode -->
@@ -21,7 +20,7 @@
  	</head>
 	<body>
     <nav class="pwaMenu">
-      <img class="pwaMenu__logo" src="<%= require('./assests/icons/pwa_icon.svg') %>" />
+      <img class="pwaMenu__logo" src="<%= require('./assets/icons/pwa_icon.svg') %>" />
       <button class="pwaMenu__installBtn">
         Instalar PWA
       </button>
@@ -30,7 +29,7 @@
       <button class="badgingAPI__clean">Clean</button>
 
       <button class="pwaMenu__shareButton">
-        <img class="pwaMenu__shareIcon" src="<%= require('./assests/icons/share_icon.svg') %>" />
+        <img class="pwaMenu__shareIcon" src="<%= require('./assets/icons/share_icon.svg') %>" />
       </button>
     </nav>
 	  <section class="main">
@@ -41,37 +40,37 @@
 					<ul class="social__links">
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://www.linkedin.com/in/fellyph-cintra-91801910/" target="_blank" alt="Look my carreer">
-								<img class="social__icon" src="<%= require('./assests/icons/linkedin.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/linkedin.svg') %>" />
 							</a>
 						</li>
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://github.com/fellyph" target="_blank" alt="Look my github">
-								<img class="social__icon" src="<%= require('./assests/icons/github.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/github.svg') %>" />
 							</a>
 						</li>
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://www.facebook.com/FellyphBlog/" target="_blank">
-								<img class="social__icon" src="<%= require('./assests/icons/facebook.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/facebook.svg') %>" />
 							</a>
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://blog.fellyph.com.br/" target="_blank" alt="Some blog's posts over there">
-								<img class="social__icon" src="<%= require('./assests/icons/wordpress.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/wordpress.svg') %>" />
 							</a>
 						</li>
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://www.slideshare.net/fellyph" target="_blank" alt="Some of my presentations">
-								<img class="social__icon" src="<%= require('./assests/icons/slideshare.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/slideshare.svg') %>" />
 							</a>
 						</li>
 						<li class="social__item">
 							<a itemprop="sameAs" href="https://twitter.com/fellyph" target="_blank" alt="My microblog">
-								<img class="social__icon" src="<%= require('./assests/icons/twitter.svg') %>" />
+								<img class="social__icon" src="<%= require('./assets/icons/twitter.svg') %>" />
 							</a>
 						</li>
 					</ul>
 				</nav>
 				<figure class="header__profile">
-					<img class="header__picture" src="<%=require('./assests/imgs/profile.svg')%>" />
+					<img class="header__picture" src="<%=require('./assets/imgs/profile.svg')%>" />
 					<figcaption>
 						<h1 class="header__hello">Hello.</h1>
 						<h2 class="header__iam"><%= htmlWebpackPlugin.options.title %></h2>
