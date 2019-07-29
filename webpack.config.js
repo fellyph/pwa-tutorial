@@ -78,17 +78,6 @@ module.exports = {
       swDest: 'sw.js',
       clientsClaim: true,
       skipWaiting: true,
-      globPatterns: ['./manifest.json'],
-      runtimeCaching: [{
-        urlPattern: new RegExp('^https:\/\/fonts\.googleapis\.com/'),
-        handler: 'StaleWhileRevalidate',
-        options: {
-          cacheName: 'google-fonts',
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      }],
     }),
   ],
 };
