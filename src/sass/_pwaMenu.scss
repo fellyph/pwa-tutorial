@@ -1,0 +1,41 @@
+.pwaMenu {
+  padding: 0.3em 1em;
+  height: 50px;
+  background: $gray;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
+  &__logo {
+    display: none;
+    width: 50px;
+    height: auto;
+    top: 0;
+  }
+
+  &__shareIcon {
+    width: 40px;
+    height: 47px;
+  }
+
+  &__shareButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: none;
+  }
+
+  &__installBtn {
+    background: $gray;
+    border: 1px solid $secondary;
+    color: $secondary;
+    padding: 0.5em 1em;
+    display: none;
+  }
+
+  @media (display-mode: standalone) {
+    &__logo {
+      display: inline-block;
+    }
+  }
+}

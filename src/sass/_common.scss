@@ -17,5 +17,9 @@ a {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0.5em;
+  padding: 0;
+}
+
+.block {
+  padding: $block-spacing;
 }

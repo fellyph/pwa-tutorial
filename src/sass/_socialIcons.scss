@@ -1,11 +1,12 @@
 .social {
   text-align: right;
-  margin-bottom: 2em;
+  margin: 2em 0;
 
   &__item {
     display: inline-block;
     margin-left: 0.5em;
     cursor: pointer;
+    vertical-align: middle;
   }
 
   &__icon {
@@ -25,7 +26,7 @@
       height: 30px;
       border-radius: 50%;
       background-color: $ternary;
-      color: #333;
+      color: $gray;
       text-align: center;
       padding: 0.4em;
       background-image: radial-gradient(circle at center, $secondary 50%, $ternary 50%);

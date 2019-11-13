@@ -1,6 +1,4 @@
 .header {
-  padding-top: 1em;
-
   &__hello {
     font-size: 4em;
     font-weight: bold;
@@ -37,5 +35,19 @@
       margin-right: 0;
       margin-bottom: 2em;
     }
+  }
+}
+
+.pwa__alert {
+  background: $secondary;
+  color: $primary;
+  text-align: center;
+  padding: 0.5em;
+  display: none;
+}
+
+@media (display-mode: fullscreen) {
+  .header__hello {
+    color: pink;
   }
 }
