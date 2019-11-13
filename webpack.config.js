@@ -2,7 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production'
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
@@ -23,10 +24,10 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
-          }
+          },
         },
         'eslint-loader',
-      ] },
+        ]},
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /(node_modules|bower_components)/,
