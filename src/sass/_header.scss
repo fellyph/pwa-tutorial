@@ -39,8 +39,8 @@
 }
 
 .pwa__alert {
-  background: $secondary;
-  color: $primary;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
   padding: 0.5em;
   display: none;

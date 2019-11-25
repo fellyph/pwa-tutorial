@@ -1,14 +1,14 @@
 body {
-  background-color: $primary;
-  color: $secondary;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: 'Arvo', serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  background-color: $secondary;
-  color: $primary;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   padding: 0.1em 0.2em;
 }
