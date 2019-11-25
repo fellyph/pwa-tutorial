@@ -51,3 +51,9 @@
     color: pink;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .header__picture {
+    filter: invert(1);
+  }
+}

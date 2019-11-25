@@ -12,6 +12,7 @@
   &__icon {
     width: 25px;
     height: 25px;
+    fill: var(--secondary-color);
   }
 
   &__links {
@@ -25,8 +26,7 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
+      color: var(--secondary-color);
       text-align: center;
       padding: 0.4em;
       background-image: radial-gradient(circle at center, var(--primary-color) 50%, var(--secondary-color) 50%);
@@ -38,10 +38,10 @@
 
       &:hover {
         background-position: 200%;
-        color: var(--secondary-color);
+        color: var(--primary-color);
 
         & .social__icon {
-          color: var(--primary-color);
+          fill: var(--primary-color);
         }
       }
     }
