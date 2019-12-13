@@ -1,7 +1,7 @@
 .pwaMenu {
   padding: 0.3em 1em;
   height: 50px;
-  background: $gray;
+  background: var(--gray-color);
   justify-content: space-between;
   align-items: center;
   display: none;
@@ -26,9 +26,9 @@
   }
 
   &__installBtn {
-    background: $gray;
-    border: 1px solid $secondary;
-    color: $secondary;
+    background: var(--gray-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     padding: 0.5em 1em;
     display: none;
   }

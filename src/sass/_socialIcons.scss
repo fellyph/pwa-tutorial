@@ -25,11 +25,11 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: $ternary;
-      color: $gray;
+      background-color: var(--ternary-color);
+      color: var(--gray-color);
       text-align: center;
       padding: 0.4em;
-      background-image: radial-gradient(circle at center, $secondary 50%, $ternary 50%);
+      background-image: radial-gradient(circle at center, var(--primary-color) 50%, var(--secondary-color) 50%);
       background-size: 200%;
       background-repeat: no-repeat;
       background-position: 50%;
@@ -38,11 +38,7 @@
 
       &:hover {
         background-position: 200%;
-        color: $secondary;
-
-        & .social__icon {
-          color: $secondary;
-        }
+        color: var(--secondary-color);
       }
     }
   }

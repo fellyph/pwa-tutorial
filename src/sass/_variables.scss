@@ -2,10 +2,12 @@
 $font_family: 'Arvo', serif;
 
 //color
-$primary: black;
-$secondary: white;
-$ternary: #bae2fd;
-$gray: #333;
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --ternary-color: #bae2fd;
+  --gray-color: #333;
+}
 
 $break-medium: 768px;
 $block-spacing: 0.7em;
