@@ -1,0 +1,21 @@
+{
+  "short_name": "Lorem Ipsum",
+  "name": "Lorem Ipsum Front-end Engineer",
+  "icons": [
+    {
+      "src": "/img/icon-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm=pwa",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#000000"
+}

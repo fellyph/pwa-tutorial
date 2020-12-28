@@ -2,7 +2,7 @@
   "name": "profile-tutorial",
   "version": "1.0.0",
   "description": "tutorial to improve the personal profile",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --mode=development",
@@ -42,13 +42,17 @@
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
     "server": "^1.0.31",
-    "style-loader": "^0.23.1",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-webpack-plugin": "^2.1.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.3.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "workbox-webpack-plugin": "^6.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
