@@ -33,3 +33,5 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
+// link documentation : https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
