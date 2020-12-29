@@ -1,6 +1,6 @@
 # PWA Course
 
-:flag_br: Esse projeto foi criado como apoio para o curso de PWA do [Canal do YouTube](https://www.youtube.com/channel/UCPaufJocHYVHj44iwXG95PA) de @fellyph. Curso criado em 2019 tem como objetivo passar sobre conceitos básicos relacionados a PWA como Service Workers e Web APIs o curso do youtube é inteiramente gratuíto, o curso não possuí um programa fechado pois Progressive web apps é conceito em constante evolucão novas APIs surgem ou sofrem melhorias todos os meses por isso que a ideia desse curso após a parte de introducão é abordar as web API qeu ajudam no desenvolvimento de uma PWA.
+:br: Esse projeto foi criado como apoio para o curso de PWA do [Canal do YouTube](https://www.youtube.com/channel/UCPaufJocHYVHj44iwXG95PA) de @fellyph. Curso criado em 2019 tem como objetivo passar sobre conceitos básicos relacionados a PWA como Service Workers e Web APIs o curso do youtube é inteiramente gratuíto, o curso não possuí um programa fechado pois Progressive web apps é conceito em constante evolucão novas APIs surgem ou sofrem melhorias todos os meses por isso que a ideia desse curso após a parte de introducão é abordar as web API qeu ajudam no desenvolvimento de uma PWA.
 
 Como contribuir com o curso:
  - Sugerindo correcões ou atualizacões dos exercícios
@@ -12,7 +12,7 @@ Como contribuir com o curso:
 
 Atualmente o Curso está em Português mas a possívelmente teremos uma versão em inglês uma das razões para conteúdo tá em inglês é o fato que eu rodo esse curso presencial.
 
-:flag_UK: This project was created to support the PWA course at the [@fellyph YouTube Channel](https://www.youtube.com/channel/UCPaufJocHYVHj44iwXG95PA). Course created in 2019 aims to pass on basic concepts related to PWA as Service Workers and Web APIs the course is entirely free on Youtube, the course does not have a closed program because Progressive web apps is a concept in constant evolution new APIs appear or undergo improvements every month so the idea of this course after the introduction part is to address the web APIs that help in the development of a PWA.
+:uk: This project was created to support the PWA course at the [@fellyph YouTube Channel](https://www.youtube.com/channel/UCPaufJocHYVHj44iwXG95PA). Course created in 2019 aims to pass on basic concepts related to PWA as Service Workers and Web APIs the course is entirely free on Youtube, the course does not have a closed program because Progressive web apps is a concept in constant evolution new APIs appear or undergo improvements every month so the idea of this course after the introduction part is to address the web APIs that help in the development of a PWA.
 
 How to contribute to the course:
   - Suggesting exercise corrections or updates
