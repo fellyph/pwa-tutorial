@@ -14,7 +14,17 @@ if ('serviceWorker' in navigator) {
         console.log('has support to notifications');
         Notification.requestPermission( (status) => {
           console.log('Status: ', status);
+          if(status === 'granted') {
+            navigator.serviceWorker.ready.then(function(registration) {
+              registration.showNotification('Notification example', {
+                body: 'PWA Course',
+                vibrate: [200, 100, 200, 100, 200, 100, 200],
+                tag: 'vibration-sample'
+              });
+            });
+          }
         });
+
       } else {
         console.log('has no support to notifications');
       }
