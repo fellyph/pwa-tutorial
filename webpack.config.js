@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const workboxPlugin = require('workbox-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -74,21 +73,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
-    }),
-    new workboxPlugin.GenerateSW({
-      swDest: 'sw.js',
-      clientsClaim: true,
-      skipWaiting: true,
-      runtimeCaching: [{
-        urlPattern: new RegExp('^https:\/\/fonts\.googleapis\.com/'),
-        handler: 'StaleWhileRevalidate',
-        options: {
-          cacheName: 'google-fonts',
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      }],
     }),
   ],
 };
